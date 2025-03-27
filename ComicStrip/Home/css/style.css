@@ -1,13 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
   padding: 0;
   align-self: center;
   text-align: center;
-  background-color: #f0f0f0;
 }
 
-#buttonalign {
+#top {
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  width: 50%;
+  margin: 0 auto;
+}
+/* button alignment */
+.buttonalign {
+  display: flex;
+  padding: 5%;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+
+/* button styling */
+button {
+  background-color: #4c6faf;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 10px; /* Add horizontal margin to separate buttons */
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+#textalign {
   text-align: center;
   margin: 0 auto;
+  width: 75%;
 }

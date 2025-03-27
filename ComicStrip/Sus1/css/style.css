@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#textstyle {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2%;
+  width: 50%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  height: 35%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0.5%;
+}
+
+.textalign {
+  text-align: center;
+  margin: 1% auto;
+  width: 75%;
+}
+
+/* button alignment */
+.buttonalign {
+  display: flex;
+  padding: 5%;
+  justify-content: left;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+
+/* button styling */
+button {
+  background-color: #4c6faf;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 10px; /* Add horizontal margin to separate buttons */
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
