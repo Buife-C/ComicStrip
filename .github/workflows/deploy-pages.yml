@@ -1,0 +1,45 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # or your default branch name
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Copy files for GitHub Pages
+        run: |
+          # Create a temporary directory for the deployment
+          mkdir -p _site
+          
+          # Copy Home/index.html to root of _site
+          cp Home/index.html _site/index.html
+          
+          # Copy other necessary files/folders
+          cp -r ArrRight _site/ArrRight
+          cp -r ArrWrong _site/ArrWrong
+          cp -r Sus1 _site/Sus1
+          cp -r Sus2 _site/Sus2
+          cp -r Sus3 _site/Sus3
+          cp -r Wit1 _site/Wit1
+          cp -r Wit2 _site/Wit2
+          cp -r Wit3 _site/Wit3
+          
+          # If you have any assets in the Home folder that need to be referenced
+          cp -r Home/* _site/
+          
+          # Copy any other necessary files (like CSS, JS, images)
+          # cp -r assets _site/assets  # Uncomment if you have an assets folder
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: _site  # The folder to deploy
+          branch: gh-pages  # The branch to deploy to
+          clean: true  # Automatically remove deleted files from the deploy branch
