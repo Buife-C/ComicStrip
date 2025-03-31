@@ -1,0 +1,89 @@
+/* CSS Style for Home */
+
+/* style for text font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* background colour for entire website */
+.background {
+  background-color: #fff4e6; 
+  height: 100%;
+  width: 100%;
+}
+
+/*  */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  align-self: center;
+  text-align: center;
+}
+
+/* style for text at the top */
+#top {
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* button alignment */
+.buttonalign {
+  display: flex;
+  padding: 5%;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+
+/* aligns text to the center */
+#textalign {
+  text-align: center;
+  margin: 0 auto;
+  width: 75%;
+}
+
+/* Header Styles */
+h1 {
+  font-size: 65px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 50px;
+  padding: 5px;
+}
+
+h3 {
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* Button Styles */
+button {
+  background-color: darkred;
+  color: white;
+  width: 30%;
+  height: 60px;
+  font-size: 25px;
+  padding: 14px 20px;
+  margin: 8px 10px; /* Add horizontal margin to separate buttons */
+  border: none;
+  cursor: pointer;
+}
+
+/* Existing fade-in animation */
+body.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
